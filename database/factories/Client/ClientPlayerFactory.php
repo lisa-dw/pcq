@@ -2,6 +2,8 @@
 
 namespace Database\Factories\Client;
 
+use App\Models\Client\Client;
+use App\Models\Player\Player;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ClientPlayerFactory extends Factory
@@ -14,8 +16,8 @@ class ClientPlayerFactory extends Factory
     public function definition()
     {
         return [
-            'content' => $this->faker->paragraph,
-            'title' => $this->faker->title,
+            'client_id' => Client::inRandomOrder()->first()->id,
+            'player_id' => Player::inRandomOrder()->first()->id,
         ];
     }
 }

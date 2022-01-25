@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\v1\Player;
 use App\Http\Controllers\Controller;
 use App\Models\Player\Player;
 use Illuminate\Http\Request;
+use Psy\Util\Str;
 
 class PlayersController extends Controller
 {
@@ -15,7 +16,7 @@ class PlayersController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -26,7 +27,7 @@ class PlayersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //헬프
     }
 
     /**
