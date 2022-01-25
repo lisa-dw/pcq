@@ -13,4 +13,5 @@ class Player extends Model
         'content',
         'title',
     ];
+
 }

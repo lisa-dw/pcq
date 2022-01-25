@@ -12,5 +12,6 @@ class Quest extends Model
     protected $fillable = [ // 사용할 컬럼을 지정.
         'content',
         'title',
+        'player_id',
     ];
 }
