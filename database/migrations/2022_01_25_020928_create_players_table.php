@@ -14,8 +14,12 @@ class CreatePlayersTable extends Migration
     public function up()
     {
         Schema::create('players', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id();   // 반드시 있어야 되는 것.
+
+            $table->string('title');
+            $table->text('content')->nullable();
+
+            $table->timestamps();   //created, update date가 생성되는 것.
         });
     }
 
